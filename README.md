@@ -1,4 +1,8 @@
-# challenge_1to50
+# GAME CHALLENGES
+
+This is an example project to learn web automation with Selenium and Python.
+
+## challenge_1to50
 
 This is a response to Federico Toledo's challenge to automate the 1to50 game with Selenium
 
@@ -7,6 +11,9 @@ This is a response to Federico Toledo's challenge to automate the 1to50 game wit
 This is an example project to learn web automation with Selenium and Python.
 The challenge was to play this game <http://zzzscore.com/1to50/en> which consists in touching the buttons in the grid from 1 to 50 as fast as possible.
 
+## challenge_MemoryGame
+
+The challenge was to play this game <http://zzzscore.com/memory> which consists in finding matching cards.
 
 ## Set up
 
@@ -18,4 +25,4 @@ The challenge was to play this game <http://zzzscore.com/1to50/en> which consist
     * Access here <https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver> and download.
     * Extract the files.
     * Set the chromedriver.exe in the same folder as playGame.py
-* Run the program: `$ playGame.py`
+* Run the program: `$ play1to50Game.py` or `$ playMatchingCardsGame.py`

@@ -16,15 +16,17 @@ result = WebDriverWait(driver, 5).until(EC.invisibility_of_element_located((By.C
 
 allElements = driver.find_elements_by_css_selector(element);
 
+#Get distint elements
+#We will use them to look for the matching card
 seen = set()
 unique = [obj for obj in allElements if obj.get_attribute('class') not in seen and not seen.add(obj.get_attribute('class'))]
 
 for u in unique:
-    
     cardType = u.get_attribute("class")
     print(cardType)
     matchingCards = [item for item in allElements if item.get_attribute("class") == cardType]
     for c in matchingCards:
+        #Click on parent element (div)
         c.find_element_by_xpath('./..').click()
 
 #Get Results
